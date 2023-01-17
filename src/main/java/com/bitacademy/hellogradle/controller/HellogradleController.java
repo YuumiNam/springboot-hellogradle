@@ -37,7 +37,7 @@ public class HellogradleController {
 		 return hello; // {"name":"spring"} 기본 default는 JSON방식으로 출력됨
 	 }
 	 
-	 // helloApi에서 불러오기위해 만든 객체
+	 // helloApi에서 불러오기위해 만든 객체임
 	 static class Hello {
 		 private String name;
 
