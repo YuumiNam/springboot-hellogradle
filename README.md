@@ -20,3 +20,14 @@ spring-boot-starter-test
 	assertj: 테스트 코드를 좀 더 편하게 작성하게 도와주는 라이브러리
 	spring-test: 스프링 통합 테스트 지원
 ```
+
+<br>
+
+![화면 캡처 2023-01-17 180755](https://user-images.githubusercontent.com/114986610/212855861-8a30af47-7abb-4f03-a5f6-415ee5a81ea9.png)
+- 컨트롤러에서 리턴 값으로 문자를 반환하면 뷰 리졸버(viewResolver)가 화면을 찾아서 처리한다
+- (참고) **spring-boot-devtools** 라이브러리를 추가하면, html파일을 컴파일만 해주면 서버 재시작 없이 View 파일 변경이 가능
+
+**웹사이트를 구성하는 3가지 방법**
+1. 정적컨텐츠 (HTML파일 자체를 웹에 올림)
+2. MVC모델 (Model, View, Controller)
+3. API 사용
