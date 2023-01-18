@@ -15,7 +15,7 @@ public class HellogradleController {
 		 return "hello";
 	 }
 	 
-	 @GetMapping("hello-mvc")
+	 @GetMapping("hello-mvc") // required=false "name" 파라미터가 없어도 된다. 기본 디폴트 값은 true
 	 public String helloMvc(@RequestParam(value="name", required=false) String name, Model model) {
 		 model.addAttribute("name", name);
 		 return "hello-template"; 
