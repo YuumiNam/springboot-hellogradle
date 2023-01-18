@@ -6,9 +6,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+
 import com.bitacademy.hellogradle.domain.Member;
 
 // MemberRepository의 구현체
+// @Repository
 public class MemoryMemberRepository implements MemberRepository{
 	
 	// 멤버 정보를 저장해주는 필드 생성

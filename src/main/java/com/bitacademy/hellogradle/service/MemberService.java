@@ -3,16 +3,21 @@ package com.bitacademy.hellogradle.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.bitacademy.hellogradle.domain.Member;
 import com.bitacademy.hellogradle.repository.MemberRepository;
 
+// @Service
 public class MemberService {
 
-	private final MemberRepository memberRepository;
+	MemberRepository memberRepository;
 	
 	// private final MemberRepository memberRepository = new MemoryMemberRepository 이렇게 하면
 	// repository의 객체랑 service의 객체랑 서로 다른 객체가 각각 생성되므로
 	// 생성자를 이용해서 둘을 같이 연결시켜줘야함
+	// @Autowired
 	public MemberService(MemberRepository memberRepository) {
 		this.memberRepository = memberRepository;
 	}
