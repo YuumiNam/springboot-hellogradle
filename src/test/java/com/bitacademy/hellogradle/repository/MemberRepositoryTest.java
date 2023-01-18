@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import com.bitacademy.hellogradle.domain.Member;
 
-class MemoryMemberRepositoryTest {
+class MemberRepositoryTest {
 
 	MemoryMemberRepository repository = new MemoryMemberRepository();
 	
