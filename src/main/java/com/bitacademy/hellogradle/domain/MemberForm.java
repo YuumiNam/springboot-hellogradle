@@ -1,4 +1,4 @@
-package com.bitacademy.hellogradle.controller;
+package com.bitacademy.hellogradle.domain;
 
 public class MemberForm {
 	private String name;

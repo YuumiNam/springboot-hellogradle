@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.bitacademy.hellogradle.domain.Member;
+import com.bitacademy.hellogradle.domain.MemberForm;
 import com.bitacademy.hellogradle.service.MemberService;
 
 // 스프링 빈을 등록하는 2가지 방법
