@@ -19,7 +19,7 @@ public class SpringConfig {
 	public SpringConfig(EntityManager em) {
 		this.em = em;
 	}
-
+	
 	@Bean
 	public MemberService memberService() {
 		return new MemberService(memberRepository());
