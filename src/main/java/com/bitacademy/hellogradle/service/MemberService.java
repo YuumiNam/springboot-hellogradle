@@ -3,13 +3,13 @@ package com.bitacademy.hellogradle.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import javax.transaction.Transactional;
 
 import com.bitacademy.hellogradle.domain.Member;
 import com.bitacademy.hellogradle.repository.MemberRepository;
 
 // @Service
+@Transactional // 비즈니스 로직은 보통 여러 리포지토리를 호출 만약에 해당 비즈니스 로직에 문제가 발생했을 경우에는 해당 비즈니스 로직과 관련된 부분을 모두 롤백해야함 그래서 일반적으로 비즈니스 로직의 시작점인 서비스에 트랜잭션을 사용
 public class MemberService {
 
 	MemberRepository memberRepository;

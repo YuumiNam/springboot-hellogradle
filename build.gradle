@@ -15,6 +15,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.3'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
