@@ -13,8 +13,15 @@ import com.bitacademy.hellogradle.service.MemberService;
 @Configuration
 public class SpringConfig {
 
+	// private DataSource dataSource;
 	private EntityManager em;
 	
+//	@Autowired
+//	public SpringConfig(DataSource dataSource) {
+//		super();
+//		this.dataSource = dataSource;
+//	}
+
 	@Autowired
 	public SpringConfig(EntityManager em) {
 		this.em = em;
@@ -28,6 +35,7 @@ public class SpringConfig {
 	@Bean
 	public MemberRepository memberRepository() {
 		// return new MemoryMemberRepository();
+		// return new JdbcTemplateMemberRepository(dataSource);
 		return new JpaMemberRepository(em);
 	}
 }
