@@ -61,7 +61,7 @@ public class MemberController {
 - @Component 어노테이션이 있으면 스프링 빈으로 자동 등록됨
 - @Controller 컨트롤러가 스프링 빈으로 자동 등록된 이류도 컴포넌트 스캔 때문
 
-- @Component 를 포함하는 다음 어노테이션도 스프링 빈으로 자동 등록된다
+- @Component 를 포함하는 다음 어노테이션도 스프링 빈으로 자동 등록됨
 	- @Controller
 	- @Service
 	- @Repository
