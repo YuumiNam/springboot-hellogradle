@@ -38,7 +38,8 @@ spring-boot-starter-test
 <br><br>
 
 **스프링 빈을 등록하는 2가지 방법**
-
+<details>
+	<summary>살펴보기</summary>
 1. 컴포넌트 스캔과 자동 의존관계 설정
 ``` java
 @Controller
@@ -103,6 +104,7 @@ public class SpringConfig {
 - XML로 설정하는 방식도 있지만 최근에는 잘 사용하지않음
 - 실무에서는 정형화된 컨트롤러, 서비스, 레포지토리 같은 코드는 컴포넌트 스캔을 사용함
 - 그러나 상황에 따라서 구현 글래스를 변경해야 하면 설정을 통해 스프링 빈으로 등록
+</details>
 <br><br>
 
 **스프링 DB 접근기술**
@@ -113,6 +115,7 @@ public class SpringConfig {
 3. **JPA** \
 (기존의 반복코드는 물론이고, 기본적인 SQL도 JPA가 직접 만들어서 실행해줌 \
 SQL과 데이터 중심의 설계에서 객체 중심의 설계로 패러다임을 전환 할 수 있음)
+
 <br><br>
 
 **JPA와 DB관련 라이브러리 추가**
