@@ -116,7 +116,7 @@ SQL과 데이터 중심의 설계에서 객체 중심의 설계로 패러다임�
 <br><br>
 
 **JPA와 DB관련 라이브러리 추가**
-1. build.gradle에 추가
+1. build.gradle에 추가할 사항
 ``` java
 dependencies {
 	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.3'
@@ -124,7 +124,7 @@ dependencies {
 }
 ```
 
-2. application.properties에 추가
+2. application.properties에 추가할 사항
 ``` java
 spring.datasource.driverClassName=org.mariadb.jdbc.Driver
 spring.datasource.url=jdbc:mariadb://127.0.0.1:3306/(DB 이름)
