@@ -1,3 +1,7 @@
+# Springboot를 Gradle, JPA, Thymeleaf를 활용한 최신트렌드로 입문
+### (기존에는 Maven, MyBatis, jsp)
+<br><br>
+
 ### (인프런) 스프링 입문 - 코드로배우는 스프링부트, 웹MVC, DB접근기술
 #### 인프런 주소 : https://www.inflearn.com/
 <br><br>
